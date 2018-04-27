@@ -15,5 +15,5 @@ JAVA_HOME="<%= @java_home %>"
 JAVA_OPTS="<%= @java_opts %> <%= @java_extra_opts %>"
 
 <% @env_var.sort.each do |key,val| -%>
-export <%= key %>="<%= val %>"
+<%= key %>="<%= val %>"
 <% end if @env_var -%>
